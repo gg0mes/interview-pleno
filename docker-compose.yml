@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+
+  postgres-bw:
+    image: postgres
+    container_name: postgres-bw
+    environment:
+      - POSTGRES_USER=brainweb
+      - POSTGRES_PASSWORD=brainweb
+      - POSTGRES_DB=localhost:5432/postgres
+    ports:
+      - "5432:5432"
